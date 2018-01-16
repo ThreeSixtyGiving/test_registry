@@ -12,6 +12,6 @@ sudo: false
 notifications:
   email:
     recipients:
-      - code@opendataservices.coop
+      - ben.webb@opendataservices.coop
     on_success: never # default: change
     on_failure: always # default: always
