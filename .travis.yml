@@ -9,7 +9,7 @@ jobs:
       script: py.test
     - stage: test
       install: gem install gist
-      script: ./test_datagetter.sh
+      script: travis_wait 30 ./test_datagetter.sh
 sudo: false
 notifications:
   email:
