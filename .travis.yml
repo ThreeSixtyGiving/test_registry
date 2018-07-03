@@ -2,18 +2,11 @@ sudo: false
 language: python
 python:
   - "3.5"
-jobs:
-  include:
-    - stage: test
-      install: pip install -r requirements.txt
-      script: py.test
-    - stage: test
-      install: gem install gist
-      script: travis_wait 30 ./test_datagetter.sh
-sudo: false
+install: pip install -r requirements.txt
+script: py.test
 notifications:
   email:
     recipients:
-      - ben.webb@opendataservices.coop
-    on_success: always # default: change
-    on_failure: never # default: always
+      - code@opendataservices.coop
+    on_success: never # default: change
+    on_failure: always # default: always

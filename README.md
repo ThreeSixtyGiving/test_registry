@@ -4,4 +4,11 @@ This repository contains nightly tests against the [360Giving data registry](htt
 
 The list of test runs is [on Travis](https://travis-ci.org/ThreeSixtyGiving/test_registry/builds). We use Travis Cron to trigger nightly builds.
 
-We have two Travis jobs, on which runs `py.test` and the other runs `test_datagetter.sh`, see [.travis.yml](.travis.yml) for the full definition.
+Running locally:
+
+```
+python3 -m venv .ve
+source .ve/bin/activate
+pip install -r requirements.txt 
+py.test
+```
