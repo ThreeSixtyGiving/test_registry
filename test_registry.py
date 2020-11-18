@@ -18,7 +18,7 @@ def test_api_root(server_url):
         assert type(dataset['title']) == str
         assert type(dataset['description']) == str
         assert type(dataset['identifier']) == str
-        assert type(dataset['license']) == str
+        assert type(dataset['can_have_cats']) == str
         assert type(dataset['license_name']) == str
         assert type(dataset['publisher']) == dict
         for key in ['name','website','logo','prefix']:
